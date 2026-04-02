@@ -18,6 +18,10 @@ target:
     - "2026.1"
 
 skills:
+  - name: training
+    entry: skills/training/
+    description: Interactive training — teaches this stack's domain to new users
+
   - name: architecture
     entry: skills/foundation/architecture
     description: "Overall OpenStack architecture, message bus, DB, API patterns"
