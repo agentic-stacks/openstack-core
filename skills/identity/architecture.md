@@ -84,7 +84,6 @@ A **role** is a named marker that expresses permissions within a scope (project,
 | `admin` | system, domain, project | Full administrative access at that scope |
 | `member` | project | Standard project user — create/use resources |
 | `reader` | project, domain, system | Read-only access |
-| `manager` | project | Manage project resources and members (2024.1+) |
 
 **Implied roles**: Roles can imply other roles. The default hierarchy is:
 ```

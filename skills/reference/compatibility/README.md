@@ -46,7 +46,7 @@ python3 --version
 
 ## Database Compatibility
 
-OpenStack services use MySQL/MariaDB for relational storage. PostgreSQL support was removed in the Ussuri release (2020.1). Galera Cluster (based on MariaDB) is the standard HA database configuration.
+OpenStack services use MySQL/MariaDB as the primary and best-tested database. PostgreSQL is still accepted by most services but receives significantly less CI coverage and community testing — MariaDB is strongly recommended for production. Galera Cluster (based on MariaDB) is the standard HA database configuration.
 
 | Release | MariaDB Minimum | MariaDB Recommended | MySQL Minimum | Notes |
 |---|---|---|---|---|
