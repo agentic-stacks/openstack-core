@@ -1,0 +1,111 @@
+name: openstack-core
+namespace: agentic-stacks
+version: "0.1.0"
+description: >
+  Comprehensive operational knowledge for all major OpenStack services.
+  Covers architecture, deployment, CLI/API operations, service internals,
+  and day-two management across OpenStack 2025.1 (Epoxy) through 2026.1.
+  Targets both operators managing production clouds and developers building
+  on OpenStack APIs.
+
+repository: https://github.com/agentic-stacks/openstack-core
+
+target:
+  software: openstack
+  versions:
+    - "2025.1"
+    - "2025.2"
+    - "2026.1"
+
+skills:
+  - name: architecture
+    entry: skills/foundation/architecture
+    description: "Overall OpenStack architecture, message bus, DB, API patterns"
+  - name: deployment-overview
+    entry: skills/foundation/deployment-overview
+    description: "Deployment methods overview with references to deployment stacks"
+  - name: configuration
+    entry: skills/foundation/configuration
+    description: "Common config patterns: oslo.config, paste.ini, policy.yaml"
+  - name: identity
+    entry: skills/identity
+    description: "Keystone: authentication, authorization, federation, catalog"
+  - name: compute
+    entry: skills/compute
+    description: "Nova + Placement: instances, scheduling, migrations, resource tracking"
+  - name: networking
+    entry: skills/networking
+    description: "Neutron: networks, routers, security groups, ML2, OVS, OVN"
+  - name: block-storage
+    entry: skills/storage/block
+    description: "Cinder: volumes, snapshots, backups, multi-backend, replication"
+  - name: image
+    entry: skills/storage/image
+    description: "Glance: image management, stores, import workflows"
+  - name: object-storage
+    entry: skills/storage/object
+    description: "Swift: containers, objects, rings, replication, erasure coding"
+  - name: shared-filesystem
+    entry: skills/storage/shared-filesystem
+    description: "Manila: shared filesystem management, share types, drivers"
+  - name: heat
+    entry: skills/orchestration/heat
+    description: "Heat: stack orchestration, templates, environments, convergence"
+  - name: magnum
+    entry: skills/orchestration/magnum
+    description: "Magnum: Kubernetes cluster provisioning on OpenStack"
+  - name: load-balancing
+    entry: skills/load-balancing
+    description: "Octavia: load balancers, listeners, pools, health monitors, amphora"
+  - name: dns
+    entry: skills/dns
+    description: "Designate: DNS zones, recordsets, reverse DNS, backend drivers"
+  - name: bare-metal
+    entry: skills/bare-metal
+    description: "Ironic: bare metal provisioning, inspection, cleaning, drivers"
+  - name: security
+    entry: skills/security
+    description: "Barbican + cross-cutting: secrets, certificates, TLS, RBAC, hardening"
+  - name: dashboard
+    entry: skills/dashboard
+    description: "Horizon and Skyline: web dashboards, configuration, customization"
+  - name: health-check
+    entry: skills/operations/health-check
+    description: "Cross-service health verification"
+  - name: upgrades
+    entry: skills/operations/upgrades
+    description: "Release upgrades including SLURP paths (2025.1 -> 2026.1)"
+  - name: backup-restore
+    entry: skills/operations/backup-restore
+    description: "Database and config backup strategies"
+  - name: capacity-planning
+    entry: skills/operations/capacity-planning
+    description: "Quota management and resource planning"
+  - name: diagnose
+    entry: skills/diagnose
+    description: "Symptom-based troubleshooting decision trees"
+  - name: decision-guides
+    entry: skills/reference/decision-guides
+    description: "Choose between networking, storage, dashboard, and deployment options"
+  - name: compatibility
+    entry: skills/reference/compatibility
+    description: "Service version matrix, Python versions, DB compatibility"
+  - name: known-issues
+    entry: skills/reference/known-issues
+    description: "Version-specific bugs and workarounds"
+
+project:
+  structure:
+    - clouds.yaml
+    - openrc
+    - templates/
+    - scripts/
+
+requires:
+  tools:
+    - name: openstack
+      description: "OpenStack unified CLI client"
+    - name: python-openstackclient
+      description: "Python OpenStack client library"
+
+depends_on: []
