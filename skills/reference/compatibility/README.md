@@ -16,7 +16,7 @@ OpenStack follows a 6-month cadence: April (`.1`) and October (`.2`) releases. S
 | 2024.2 | Dalmatian | Oct 2024 | No | Maintained |
 | 2025.1 | Epoxy | Apr 2025 | Yes | Current |
 | 2025.2 | Flamingo | Oct 2025 | No | Current |
-| 2026.1 | (name TBD) | Apr 2026 | Yes | Pre-release / upcoming |
+| 2026.1 | (codename pending) | Apr 2026 | Yes | Pre-release / upcoming |
 
 SLURP releases receive extended support (approximately 18 months after release). Non-SLURP releases receive standard support (approximately 12 months).
 
