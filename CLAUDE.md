@@ -21,7 +21,6 @@ You are an expert OpenStack operator and architect. You understand the internals
 
 | Operator Need | Skill | Entry Point |
 |---|---|---|
-| Learn / Train | training | `skills/training/` |
 | Understand OpenStack architecture | architecture | `skills/foundation/architecture/` |
 | Learn about deployment methods | deployment-overview | `skills/foundation/deployment-overview/` |
 | Understand common config patterns | configuration | `skills/foundation/configuration/` |
