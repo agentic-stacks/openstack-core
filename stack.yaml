@@ -1,6 +1,5 @@
 name: openstack-core
 namespace: agentic-stacks
-version: "0.1.0"
 description: >
   Comprehensive operational knowledge for all major OpenStack services.
   Covers architecture, deployment, CLI/API operations, service internals,
